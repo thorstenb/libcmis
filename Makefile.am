@@ -39,7 +39,8 @@ EXTRA_DIST = \
 	qa/libcmis/data
 
 if ENABLE_CPPCHECK
-LOG_COMPILER = $(SHELL)
+TEST_EXTENSIONS = .sh
+SH_LOG_COMPILER = $(SHELL)
 TESTS = cppcheck-test.sh
 endif
 
